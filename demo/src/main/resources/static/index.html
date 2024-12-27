@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Inventarios</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #007BFF;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        .container {
+            margin: 2rem auto;
+            max-width: 800px;
+            background: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .content {
+            padding: 1.5rem;
+        }
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+        p {
+            line-height: 1.6;
+            color: #555;
+        }
+        .link {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.5rem 1rem;
+            background: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background 0.3s;
+        }
+        .link:hover {
+            background: #0056b3;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #007BFF;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bienvenido al Sistema de Gestión de Inventarios</h1>
+    </header>
+    <div class="container">
+        <div class="content">
+            <h2>API de Almacenes</h2>
+            <p>Gestiona los almacenes de forma eficiente utilizando la API REST desarrollada para este sistema.</p>
+            <ul>
+                <li><a class="link" href="/api/almacenes" target="_blank">Listar Almacenes</a></li>
+                <li><a class="link" href="/api/almacenes/{id}" target="_blank">Buscar Almacén por ID</a></li>
+                <li><a class="link" href="/crear-almacen.html">Crear un nuevo Almacén</a></li>
+                <li><a class="link" href="/api/almacenes/{id}" target="_blank">Actualizar Almacén</a> (requiere PUT)</li>
+                <li><a class="link" href="/api/almacenes/{id}" target="_blank">Eliminar Almacén</a> (requiere DELETE)</li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        &copy; 2024 Sistema de Gestión de Inventarios
+    </footer>
+</body>
+</html>
